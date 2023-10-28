@@ -113,9 +113,7 @@ export default function Home() {
               Since the beginning of my journey as a fullstack developer
             </p>
             <p className="text-lg py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I creating user-friendly, responsive, and visually appealing web
-              applications. Debugging, testing, and optimizing code for
-              performance and security
+              I create user-friendly, responsive, and visually appealing web applications. Debugging, testing, and optimizing code for performance and security
             </p>
           </div>
           <div className="lg:flex gap-20">
