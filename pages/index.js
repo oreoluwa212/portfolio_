@@ -110,23 +110,22 @@ export default function Home() {
               Services I offer
             </h3>
             <p className="text-lg py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a freelance designer and
-              developer
+              Since the beginning of my journey as a fullstack developer
             </p>
             <p className="text-lg py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I offer from a wide range of services, including brand design,
-              programming and teaching.
+              I creating user-friendly, responsive, and visually appealing web
+              applications. Debugging, testing, and optimizing code for
+              performance and security
             </p>
           </div>
           <div className="lg:flex gap-20">
             <div className=" h-[350px] text-center shadow-2xl p-10 rounded-xl my-10  dark:bg-white flex-1">
               <Image src={design} width={100} height={100} alt="image" />
               <h3 className="font-bold text-[20px] text-teal-600 pt-8 pb-2  ">
-                Beautiful Designs
+                Beautiful Applications
               </h3>
               <p className="py-2">
-                Creating elegant designs suited for your needs following core
-                design theory.
+                Creating elegant web apps suited for your needs following core design theory.
               </p>
             </div>
             <div className="text-center h-[350px] shadow-2xl p-10 rounded-xl my-10 dark:bg-white flex-1">
@@ -135,8 +134,7 @@ export default function Home() {
                 Code your dream project
               </h3>
               <p className="py-2">
-                Do you have an idea for your next great website? Let us make it
-                a reality.
+                Do you have an idea for your next great website? Let us make it a reality.
               </p>
             </div>
             <div className="h-[350px] text-center shadow-2xl p-10 rounded-xl my-10 dark:bg-white flex-1">
@@ -145,8 +143,7 @@ export default function Home() {
                 Consulting
               </h3>
               <p className="py-2">
-                Are you interested in feedback for your current project? I can
-                give you tips and tricks to level it up.
+                Are you interested in feedback for your current project? I can give you tips and tricks to level it up.
               </p>
             </div>
           </div>
@@ -253,8 +250,10 @@ export default function Home() {
         <div className="px-[20%] mt-[40px]">
           <h3 className="dark:text-white text-center text-[26px]">
             I&apos;m currently looking to join a{" "}
-            <span className="text-teal-600 text-[35px]">cross-functional team</span> that values improving
-            people&apos;s lives through accessible design
+            <span className="text-teal-600 text-[35px]">
+              cross-functional team
+            </span>{" "}
+            that values improving people&apos;s lives through accessible design
           </h3>
           <div className="mt-10 justify-center align-center flex flex-row w-[400px] gap-8">
             <Image className="rounded-lg h-16" src={stack1} alt="image" />
