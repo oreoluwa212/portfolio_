@@ -162,7 +162,7 @@ export default function Home() {
               equilibrium between user needs and business goals.
             </p>
           </div>
-          <div className=" bg-[teal] w-[1400px] flex mt-10 flex-col align-center justify-center gap-20 py-20 lg:flex-row lg:flex-wrap">
+          <div className=" bg-[teal] w-[1300px] flex mt-10 flex-col align-center justify-center gap-20 py-20 lg:flex-row lg:flex-wrap">
             <div className="basis-1/4">
               <Link href={"https://store-clothing.vercel.app"}>
                 <a target="_blank">
@@ -252,8 +252,9 @@ export default function Home() {
         {/* ------------- Footer -------------- */}
         <div className="px-[20%] mt-[40px]">
           <h3 className="dark:text-white text-center text-[26px]">
-            I&apos;m currently looking to join a cross-functional team that
-            values improving people&apos;s lives through accessible design
+            I&apos;m currently looking to join a{" "}
+            <span className="text-teal-600 text-[35px]">cross-functional team</span> that values improving
+            people&apos;s lives through accessible design
           </h3>
           <div className="mt-10 justify-center align-center flex flex-row w-[400px] gap-8">
             <Image className="rounded-lg h-16" src={stack1} alt="image" />
