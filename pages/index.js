@@ -253,7 +253,7 @@ export default function Home() {
         <div className="px-[20%] mt-[40px]">
           <h3 className="dark:text-white text-center text-[26px]">
             I&apos;m currently looking to join a cross-functional team that
-            values improving people's lives through accessible design
+            values improving people&apos;s lives through accessible design
           </h3>
           <div className="mt-10 justify-center align-center flex flex-row w-[400px] gap-8">
             <Image className="rounded-lg h-16" src={stack1} alt="image" />
