@@ -162,7 +162,7 @@ export default function Home() {
               <Link href={"https://store-clothing.vercel.app"}>
                 <a target="_blank">
                   <Image
-                    className="rounded-lg object-cover max-w-1/3"
+                    className="rounded-lg object-cover max-w-[480px]-1/3"
                   
                     layout="responsive"
                     src={web1}
@@ -175,7 +175,7 @@ export default function Home() {
               <Link href={"https://postcode-alpha.vercel.app/"}>
                 <a target="_blank">
                   <Image
-                    className="rounded-lg object-cover max-w-1/3"
+                    className="rounded-lg object-cover max-w-[480px]-1/3"
                     
                     layout="responsive"
                     src={web6}
@@ -188,7 +188,7 @@ export default function Home() {
               <Link href={"https://gadgets-store.vercel.app/"}>
                 <a target="_blank">
                   <Image
-                    className="rounded-lg max-w-1/3 object-cover"
+                    className="rounded-lg max-w-[480px]-1/3 object-cover"
                   
                     layout="responsive"
                     src={web3}
@@ -201,7 +201,7 @@ export default function Home() {
               <Link href={"https://bis-payer.vercel.app/"}>
                 <a target="_blank">
                   <Image
-                    className="rounded-lg max-w-1/3 object-cover"
+                    className="rounded-lg max-w-[480px]-1/3 object-cover"
                     
                     layout="responsive"
                     src={web4}
@@ -214,7 +214,7 @@ export default function Home() {
               <Link href={"https://group-l-team-task.vercel.app/"}>
                 <a target="_blank">
                   <Image
-                    className="rounded-lg max-w-1/3 object-cover"
+                    className="rounded-lg max-w-[480px]-1/3 object-cover"
                   
                     layout="responsive"
                     src={web5}
@@ -227,7 +227,7 @@ export default function Home() {
               <Link href={"https://teeket-app.vercel.app/"}>
                 <a target="_blank">
                   <Image
-                    className="rounded-lg max-w-1/3 object-cover"
+                    className="rounded-lg max-w-[480px]-1/3 object-cover"
                     
                     layout="responsive"
                     src={web2}
