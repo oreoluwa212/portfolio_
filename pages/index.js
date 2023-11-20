@@ -157,7 +157,7 @@ export default function Home() {
               equilibrium between user needs and business goals.
             </p>
           </div>
-          <div className=" bg-[teal] w-[1300px] rounded-xl flex mt-10 flex-col align-center justify-center gap-20 py-20 lg:flex-row lg:flex-wrap">
+          <div className="w-[1300px] rounded-xl flex mt-6 flex-col align-center justify-start gap-20 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/4">
               <Link href={"https://store-clothing.vercel.app"}>
                 <a target="_blank">
