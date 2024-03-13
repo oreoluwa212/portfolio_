@@ -18,7 +18,7 @@ import web2 from "../public/web2.png";
 import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
+import web8 from "../public/web8.png";
 import stack1 from '../public/Rectangle 4.png'
 import stack2 from '../public/Rectangle 2.png'
 import stack3 from '../public/Rectangle 7.png'
@@ -51,9 +51,7 @@ export default function Home() {
               <li>
                 <p>
                   <Link href="https://docs.google.com/document/d/1qV_RJRg7P02FOBERw7PcIdcsx2STEDxa/edit?rtpof=true">
-                    <a target="_blank" rel="noopener noreferrer">
-                      Resume
-                    </a>
+                    Resume
                   </Link>
                 </p>
               </li>
@@ -78,24 +76,16 @@ export default function Home() {
               </p>
               <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
                 <Link href="https://twitter.com/oreoluwa_ruth">
-                  <a target="_blank" rel="noopener noreferrer">
-                    <AiFillTwitterCircle size={40} />
-                  </a>
+                  <AiFillTwitterCircle size={40} />
                 </Link>
                 <Link href="https://www.github.com/oreoluwa212">
-                  <a target="_blank" rel="noopener noreferrer">
-                    <AiFillGithub size={40} />
-                  </a>
+                  <AiFillGithub size={40} />
                 </Link>
                 <Link href="https://www.linkedin.com/in/oreoluwaajayi/">
-                  <a target="_blank" rel="noopener noreferrer">
-                    <AiFillLinkedin size={40} />
-                  </a>
+                  <AiFillLinkedin size={40} />
                 </Link>
                 <Link href="https://www.instagram.com/prin_cesstiwa/">
-                  <a target="_blank" rel="noopener noreferrer">
-                    <AiFillInstagram size={40} />
-                  </a>
+                  <AiFillInstagram size={40} />
                 </Link>
               </div>
             </div>
@@ -113,7 +103,9 @@ export default function Home() {
               Since the beginning of my journey as a fullstack developer
             </p>
             <p className="text-lg py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I create user-friendly, responsive, and visually appealing web applications. Debugging, testing, and optimizing code for performance and security
+              I create user-friendly, responsive, and visually appealing web
+              applications. Debugging, testing, and optimizing code for
+              performance and security
             </p>
           </div>
           <div className="lg:flex gap-20">
@@ -123,7 +115,8 @@ export default function Home() {
                 Beautiful Applications
               </h3>
               <p className="py-2">
-                Creating elegant web apps suited for your needs following core design theory.
+                Creating elegant web apps suited for your needs following core
+                design theory.
               </p>
             </div>
             <div className="text-center h-[350px] shadow-2xl p-10 rounded-xl my-10 dark:bg-white flex-1">
@@ -132,7 +125,8 @@ export default function Home() {
                 Code your dream project
               </h3>
               <p className="py-2">
-                Do you have an idea for your next great website? Let us make it a reality.
+                Do you have an idea for your next great website? Let us make it
+                a reality.
               </p>
             </div>
             <div className="h-[350px] text-center shadow-2xl p-10 rounded-xl my-10 dark:bg-white flex-1">
@@ -141,12 +135,13 @@ export default function Home() {
                 Consulting
               </h3>
               <p className="py-2">
-                Are you interested in feedback for your current project? I can give you tips and tricks to level it up.
+                Are you interested in feedback for your current project? I can
+                give you tips and tricks to level it up.
               </p>
             </div>
           </div>
         </section>
-        <section className="py-20">
+        <section className="py-2">
           <div>
             <h3 className="text-[40px] py-1 dark:text-white ">Portfolio</h3>
             <p className="text-lg py-2 leading-8 text-gray-800 dark:text-gray-200">
@@ -157,89 +152,72 @@ export default function Home() {
               equilibrium between user needs and business goals.
             </p>
           </div>
-          <div className="max-w-[1300px] min-w-[400px] rounded-xl flex mt-6 flex-col align-center justify-start gap-20 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/4 h-[300px]">
+          <div className="max-w-[1300px] min-w-[400px] rounded-xl flex mt-6 flex-col align-center justify-between gap-10 py-10 lg:flex-row flex-wrap">
+            <div className="basis-1/4 h-[100px] shadow-lg shadow-black/30">
+              <Link href={"https://life-plus-webapp.vercel.app/"}>
+                <Image
+                  className="rounded-lg object-cover max-w-[480px]-1/3"
+                  layout="responsive"
+                  src={web8}
+                  alt="image"
+                />
+              </Link>
+            </div>
+            <div className="basis-1/4 h-[100px]">
               <Link href={"https://store-clothing.vercel.app"}>
-                <a target="_blank">
-                  <Image
-                    className="rounded-lg object-cover max-w-[480px]-1/3 h-[300px] shadow-lg shadow-black/30"
-                  
-                    layout="responsive"
-                    src={web1}
-                    alt="image"
-                  />
-                </a>
+                <Image
+                  className="rounded-lg object-cover max-w-[480px]-1/3 shadow-lg shadow-black/30"
+                  layout="responsive"
+                  src={web1}
+                  alt="image"
+                />
               </Link>
             </div>
-            <div className="basis-1/4 h-[300px]">
-              <Link href={"https://postcode-alpha.vercel.app/"}>
-                <a target="_blank">
-                  <Image
-                    className="rounded-lg object-cover max-w-[480px]-1/3 h-[300px] shadow-lg shadow-black/30"
-                    
-                    layout="responsive"
-                    src={web6}
-                    alt="image"
-                  />
-                </a>
-              </Link>
-            </div>
+
             <div className="basis-1/4 h-[300px]">
               <Link href={"https://gadgets-store.vercel.app/"}>
-                <a target="_blank">
-                  <Image
-                    className="rounded-lg max-w-[480px]-1/3 object-cover h-[300px] shadow-lg shadow-black/30"
-                  
-                    layout="responsive"
-                    src={web3}
-                    alt="image"
-                  />
-                </a>
+                <Image
+                  className="rounded-lg max-w-[480px]-1/3 object-cover h-[300px] shadow-lg shadow-black/30"
+                  layout="responsive"
+                  src={web3}
+                  alt="image"
+                />
               </Link>
             </div>
             <div className="basis-1/4 h-[300px]">
               <Link href={"https://bis-payer.vercel.app/"}>
-                <a target="_blank">
-                  <Image
-                    className="rounded-lg max-w-[480px]-1/3 object-cover h-[300px] shadow-lg shadow-black/30"
-                    
-                    layout="responsive"
-                    src={web4}
-                    alt="image"
-                  />
-                </a>
+                <Image
+                  className="rounded-lg max-w-[480px]-1/3 object-cover h-[300px] shadow-lg shadow-black/30"
+                  layout="responsive"
+                  src={web4}
+                  alt="image"
+                />
               </Link>
             </div>
             <div className="basis-1/4 h-[300px]">
               <Link href={"https://group-l-team-task.vercel.app/"}>
-                <a target="_blank">
-                  <Image
-                    className="rounded-lg max-w-[480px]-1/3 object-cover h-[300px] shadow-lg shadow-black/30"
-                  
-                    layout="responsive"
-                    src={web5}
-                    alt="image"
-                  />
-                </a>
+                <Image
+                  className="rounded-lg max-w-[480px]-1/3 object-cove shadow-lg shadow-black/30"
+                  layout="responsive"
+                  src={web5}
+                  alt="image"
+                />
               </Link>
             </div>
             <div className="basis-1/4 h-[300px]">
-              <Link href={"https://teeket-app.vercel.app/"}>
-                <a target="_blank">
-                  <Image
-                    className="rounded-lg max-w-[480px]-1/3 object-cover h-[300px] shadow-lg shadow-black/30"
-                    
-                    layout="responsive"
-                    src={web2}
-                    alt="image"
-                  />
-                </a>
+              <Link href={"https://simbi-tech-web-app.vercel.app/"}>
+                <Image
+                  className="rounded-lg max-w-[480px]-1/3 object-cover h-[300px] shadow-lg shadow-black/30"
+                  layout="responsive"
+                  src={web2}
+                  alt="image"
+                />
               </Link>
             </div>
           </div>
         </section>
         {/* ------------- Footer -------------- */}
-        <div className="px-[20%] mt-[40px]">
+        <div className="px-[10%]">
           <h3 className="dark:text-white text-center text-[26px]">
             I&apos;m currently looking to join a{" "}
             <span className="text-teal-600 text-[35px]">
@@ -247,13 +225,33 @@ export default function Home() {
             </span>{" "}
             that values improving people&apos;s lives through accessible design
           </h3>
-          <div className="mt-10 justify-center align-center flex flex-row w-[400px] gap-8">
-            <Image className="rounded-lg h-16" src={stack1} alt="image" />
-            <Image className="rounded-lg h-16" src={stack2} alt="image" />
-            <Image className="rounded-lg h-16" src={stack3} alt="image" />
-            <Image className="rounded-lg h-16" src={stack4} alt="image" />
-            <Image className="rounded-lg h-16" src={stack5} alt="image" />
-            <Image className="rounded-lg h-16" src={stack6} alt="image" />
+          <div className="mt-10 justify-center align-center flex flex-row w-full gap-8">
+            <Image
+              className="rounded-[50%] h-10 w-10"
+              src={stack1}
+              alt="image"
+            />
+            <Image
+              className="rounded-[50%] h-10 w-10"
+              src={stack2}
+              alt="image"
+            />
+            <Image
+              className="rounded-[50%] h-10 w-10"
+              src={stack3}
+              alt="image"
+            />
+            <Image
+              className="rounded-[50%] h-10 w-10"
+              src={stack4}
+              alt="image"
+            />
+            <Image
+              className="rounded-[50%] h-10 w-10"
+              src={stack5}
+              alt="image"
+            />
+
           </div>
         </div>
         <section className="py-20">
