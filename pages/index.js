@@ -158,7 +158,7 @@ export default function Home() {
             </p>
           </div>
           <div className="max-w-[1300px] min-w-[400px] rounded-xl flex mt-6 flex-col align-center justify-start gap-20 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/4">
+            <div className="basis-1/4 h-[300px]">
               <Link href={"https://store-clothing.vercel.app"}>
                 <a target="_blank">
                   <Image
@@ -171,7 +171,7 @@ export default function Home() {
                 </a>
               </Link>
             </div>
-            <div className="basis-1/4">
+            <div className="basis-1/4 h-[300px]">
               <Link href={"https://postcode-alpha.vercel.app/"}>
                 <a target="_blank">
                   <Image
@@ -184,7 +184,7 @@ export default function Home() {
                 </a>
               </Link>
             </div>
-            <div className="basis-1/4">
+            <div className="basis-1/4 h-[300px]">
               <Link href={"https://gadgets-store.vercel.app/"}>
                 <a target="_blank">
                   <Image
@@ -197,7 +197,7 @@ export default function Home() {
                 </a>
               </Link>
             </div>
-            <div className="basis-1/4">
+            <div className="basis-1/4 h-[300px]">
               <Link href={"https://bis-payer.vercel.app/"}>
                 <a target="_blank">
                   <Image
@@ -210,7 +210,7 @@ export default function Home() {
                 </a>
               </Link>
             </div>
-            <div className="basis-1/4">
+            <div className="basis-1/4 h-[300px]">
               <Link href={"https://group-l-team-task.vercel.app/"}>
                 <a target="_blank">
                   <Image
@@ -223,7 +223,7 @@ export default function Home() {
                 </a>
               </Link>
             </div>
-            <div className="basis-1/4">
+            <div className="basis-1/4 h-[300px]">
               <Link href={"https://teeket-app.vercel.app/"}>
                 <a target="_blank">
                   <Image
