@@ -142,12 +142,12 @@ export default function Home() {
           <div>
             <h3 className="text-[40px] py-1 dark:text-white ">Portfolio</h3>
             <p className="text-lg py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Welcome to my portfolio! I'm passionate about creating digital
+              Welcome to my portfolio! I&apos;m passionate about creating digital
               products that strike a perfect balance between user needs and
               business objectives.
             </p>
             <p className="text-lg py-2 leading-8 text-gray-800 dark:text-gray-200">
-              With a keen eye for detail and a love for problem-solving, I've
+              With a keen eye for detail and a love for problem-solving, I&apo;ve
               embarked on a journey to craft delightful web experiences that
               leave a lasting impact.
             </p>
