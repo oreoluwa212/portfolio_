@@ -13,12 +13,6 @@ import code from "../public/code.png";
 import design from "../public/design.png";
 import consulting from "../public/consulting.png";
 import Image from "next/image";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web8 from "../public/web8.png";
 import stack1 from '../public/Rectangle 4.png'
 import stack2 from '../public/Rectangle 2.png'
 import stack3 from '../public/Rectangle 7.png'
@@ -26,6 +20,7 @@ import stack4 from '../public/Rectangle 6.png'
 import stack5 from '../public/Rectangle 1.png'
 import stack6 from '../public/Rectangle 13.png'
 import stack7 from '../public/Ellipse 14.png'
+import PortfolioSlider from "../components/PortfolioSlider";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -50,9 +45,13 @@ export default function Home() {
               </li>
               <li>
                 <p>
-                  <Link href="https://docs.google.com/document/d/1qV_RJRg7P02FOBERw7PcIdcsx2STEDxa/edit?rtpof=true">
+                  <a
+                    href="https://docs.google.com/document/d/1MtiyDNLKHo-N4UNkuL-RZqN4Iv4rh49PBXijydEzUpg/edit"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Resume
-                  </Link>
+                  </a>
                 </p>
               </li>
             </ul>
@@ -145,77 +144,21 @@ export default function Home() {
           <div>
             <h3 className="text-[40px] py-1 dark:text-white ">Portfolio</h3>
             <p className="text-lg py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a web developer,
+              Welcome to my portfolio! I'm passionate about creating digital
+              products that strike a perfect balance between user needs and
+              business objectives.
             </p>
             <p className="text-lg py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I make meaningful and delightful digital products that create an
-              equilibrium between user needs and business goals.
+              With a keen eye for detail and a love for problem-solving, I've
+              embarked on a journey to craft delightful web experiences that
+              leave a lasting impact.
             </p>
           </div>
-          <div className="max-w-[1300px] min-w-[400px] rounded-xl flex mt-6 flex-col align-center justify-between gap-10 py-10 lg:flex-row flex-wrap">
-            <div className="basis-1/4 h-[100px] shadow-lg shadow-black/30">
-              <Link href={"https://life-plus-webapp.vercel.app/"}>
-                <Image
-                  className="rounded-lg object-cover max-w-[480px]-1/3"
-                  layout="responsive"
-                  src={web8}
-                  alt="image"
-                />
-              </Link>
-            </div>
-            <div className="basis-1/4 h-[100px]">
-              <Link href={"https://store-clothing.vercel.app"}>
-                <Image
-                  className="rounded-lg object-cover max-w-[480px]-1/3 shadow-lg shadow-black/30"
-                  layout="responsive"
-                  src={web1}
-                  alt="image"
-                />
-              </Link>
-            </div>
-
-            <div className="basis-1/4 h-[300px]">
-              <Link href={"https://gadgets-store.vercel.app/"}>
-                <Image
-                  className="rounded-lg max-w-[480px]-1/3 object-cover h-[300px] shadow-lg shadow-black/30"
-                  layout="responsive"
-                  src={web3}
-                  alt="image"
-                />
-              </Link>
-            </div>
-            <div className="basis-1/4 h-[300px]">
-              <Link href={"https://bis-payer.vercel.app/"}>
-                <Image
-                  className="rounded-lg max-w-[480px]-1/3 object-cover h-[300px] shadow-lg shadow-black/30"
-                  layout="responsive"
-                  src={web4}
-                  alt="image"
-                />
-              </Link>
-            </div>
-            <div className="basis-1/4 h-[300px]">
-              <Link href={"https://group-l-team-task.vercel.app/"}>
-                <Image
-                  className="rounded-lg max-w-[480px]-1/3 object-cove shadow-lg shadow-black/30"
-                  layout="responsive"
-                  src={web5}
-                  alt="image"
-                />
-              </Link>
-            </div>
-            <div className="basis-1/4 h-[300px]">
-              <Link href={"https://simbi-tech-web-app.vercel.app/"}>
-                <Image
-                  className="rounded-lg max-w-[480px]-1/3 object-cover h-[300px] shadow-lg shadow-black/30"
-                  layout="responsive"
-                  src={web2}
-                  alt="image"
-                />
-              </Link>
-            </div>
-          </div>
+          <section className="py-8">
+            <PortfolioSlider />
+          </section>
         </section>
+
         {/* ------------- Footer -------------- */}
         <div className="px-[10%]">
           <h3 className="dark:text-white text-center text-[26px]">
@@ -251,7 +194,6 @@ export default function Home() {
               src={stack5}
               alt="image"
             />
-
           </div>
         </div>
         <section className="py-20">

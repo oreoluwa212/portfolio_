@@ -22,3 +22,22 @@ a {
   font-family: "burtons";
   src: url("../public/Burtons.otf");
 }
+
+
+.portfolio-slider {
+  .slick-slide {
+    padding: 10px 20px;
+    /* Adjust the gap between images */
+  }
+}
+
+.portfolio-item {
+  height: 200px;
+  /* Set the height of image container */
+}
+
+.portfolio-item-inner {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
