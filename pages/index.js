@@ -18,15 +18,13 @@ import stack2 from '../public/Rectangle 2.png'
 import stack3 from '../public/Rectangle 7.png'
 import stack4 from '../public/Rectangle 6.png'
 import stack5 from '../public/Rectangle 1.png'
-import stack6 from '../public/Rectangle 13.png'
-import stack7 from '../public/Ellipse 14.png'
 import PortfolioSlider from "../components/PortfolioSlider";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <div className={darkMode ? "" : "dark"}>
       <Head>
         <title>Portfolio website</title>
         <meta name="description" content="Oreoluwa Ruth" />
