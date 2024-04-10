@@ -79,7 +79,7 @@ const PortfolioSlider = () => {
       </div>
       <div className="portfolio-item">
         <a
-          href="https://gadgets-store.vercel.app/"
+          href="https://msi-store-six.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
         >
