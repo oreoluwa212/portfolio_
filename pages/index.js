@@ -100,7 +100,7 @@ export default function Home() {
               Since the beginning of my journey as a fullstack developer
             </p>
             <p className="text-lg py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I create user-friendly, responsive, and visually appealing web
+              I have created user-friendly, responsive, and visually appealing web
               applications. Debugging, testing, and optimizing code for
               performance and security
             </p>
@@ -147,7 +147,7 @@ export default function Home() {
               business objectives.
             </p>
             <p className="text-lg py-2 leading-8 text-gray-800 dark:text-gray-200">
-              With a keen eye for detail and a love for problem-solving, I&apo;ve
+              With a keen eye for detail and a love for problem-solving, I&apos;ve
               embarked on a journey to craft delightful web experiences that
               leave a lasting impact.
             </p>
