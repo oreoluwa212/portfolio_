@@ -60,7 +60,7 @@ export default function Home() {
                 OREOLUWA RUTH AJAYI
               </h2>
               <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
-                FullStack Developer.
+                Product Designer, Mechanical Engineer & FullStack Developer.
               </h3>
               <p className="text-md py-5 leading-8 text-left text-gray-800 dark:text-gray-200 max-w-3xl mx-auto md:text-xl">
                 I am a passionate and dedicated software developer with a deep
@@ -160,11 +160,11 @@ export default function Home() {
         {/* ------------- Footer -------------- */}
         <div className="px-[10%]">
           <h3 className="dark:text-white text-center text-[26px]">
-            I&apos;m currently looking to join a{" "}
+            I like to create 
             <span className="text-teal-600 text-[35px]">
-              cross-functional team
+              solid and scalable 
             </span>{" "}
-            that values improving people&apos;s lives through accessible design
+            web applications with great user experiences.
           </h3>
           <div className="mt-10 justify-center align-center flex flex-row w-full gap-8">
             <Image
