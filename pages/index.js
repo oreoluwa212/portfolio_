@@ -65,7 +65,7 @@ export default function Home() {
               <p className="text-md py-5 leading-8 text-left text-gray-800 dark:text-gray-200 max-w-3xl mx-auto md:text-xl">
                 I am a passionate and dedicated software developer with a deep
                 love for crafting elegant and efficient solutions to complex
-                problems. With 2 years of experience in the industry, I&apos;ve
+                problems. With 3 years of experience in the industry, I&apos;ve
                 had the privilege of working on a wide range of projects. I help
                 brands prioritize user experience through the combination of
                 design, technology and programming. Simply put, I build
@@ -97,7 +97,7 @@ export default function Home() {
               Services I offer
             </h3>
             <p className="text-lg py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a fullstack developer
+              Since the beginning of my journey as a designer and fullstack developer,
             </p>
             <p className="text-lg py-2 leading-8 text-gray-800 dark:text-gray-200">
               I have created user-friendly, responsive, and visually appealing web
@@ -161,7 +161,7 @@ export default function Home() {
         <div className="px-[10%]">
           <h3 className="dark:text-white text-center text-[26px]">
             I like to create 
-            <span className="text-teal-600 text-[35px]">
+            <span className="text-teal-600 px-2 text-[35px]">
               solid and scalable 
             </span>{" "}
             web applications with great user experiences.
