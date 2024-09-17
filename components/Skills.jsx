@@ -69,7 +69,6 @@ const Skills = () => {
           <FaTools className="inline" />. You may find me building with these:
         </p>
       </Hoc>
-
       <div className="relative overflow-hidden w-full mt-4" ref={skillsRef}>
         <motion.div
           className="flex"
