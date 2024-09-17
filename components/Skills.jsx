@@ -57,15 +57,19 @@ const Skills = () => {
       initial="hidden"
       animate="visible"
       id="skills"
-      className="lg:py-16 py-10 relative"
+      className="relative"
     >
+      <Hoc>
+        <p className="smallHeading">Skillset</p>
+      </Hoc>
+
       <Hoc>
         <p className="heading">my specialty</p>
       </Hoc>
 
       <Hoc>
-        <p className="mt-6">
-          Over the past six years, I&apos;ve had the opportunity to learn and master a variety of tools and programming languages{" "}
+        <p className="">
+          Over the past three years, I&apos;ve had the opportunity to learn and master a variety of tools and programming languages.
           <FaTools className="inline" />. You may find me building with these:
         </p>
       </Hoc>

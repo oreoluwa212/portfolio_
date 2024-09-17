@@ -11,7 +11,6 @@ import {
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { RxHamburgerMenu } from "react-icons/rx";
-import Hero from "../components/Hero";
 import Skills from "../components/Skills";
 import Experience from "../components/Experience";
 import Projects from "../components/Projects";
@@ -86,13 +85,12 @@ export default function Home() {
                   </li>
                 </ul>
               </nav>
-
-              <div className="text-center py-10 flex flex-col md:flex-row md:gap-20 items-center">
+              <div className="text-center pt-10 flex flex-col md:flex-row md:gap-20 items-center">
                 <div>
-                  <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
-                    OREOLUWA RUTH AJAYI
+                  <h2 className="text-3xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-4xl">
+                    I am a
                   </h2>
-                  <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
+                  <h3 className="font-extrabold lg:text-5xl md:text-4xl text-2xl tracking-[0.15em]">
                     Product Designer, Mechanical Engineer & FullStack Developer.
                   </h3>
                   <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-3xl mx-auto md:text-xl">
@@ -120,17 +118,12 @@ export default function Home() {
                 </div>
               </div>
             </section>
-
-            {/* Main section with fixed grid structure */}
             <div className="px-6 md:px-0">
-              <Hero />
               <Skills />
               <Experience />
               <Projects />
               <Contact />
             </div>
-
-            {/* Portfolio Section */}
             <section className="px-4 py-8">
               <h3 className="text-4xl py-1 dark:text-white">Portfolio</h3>
               <PortfolioSlider />
