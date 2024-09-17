@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   padding: 0;
@@ -10,34 +14,76 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
 
-* {
-  box-sizing: border-box;
-}
 @font-face {
   font-family: "burtons";
   src: url("../public/Burtons.otf");
 }
 
+@font-face {
+  font-family: "quicksand";
+  src: url("/fonts/Quicksand-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "playfair";
+  src: url("/fonts/PlayfairDisplay-VariableFont_wght.ttf");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p, li, button {
+    @apply font-quicksand;
+}
+
+p {
+    @apply leading-7 font-semibold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair tracking-[0.2em];
+}
+
+.sidebarLink {
+    @apply lg:my-3 my-2 cursor-pointer uppercase text-xs tracking-widest text-slate-400 hover:text-blue-400 border-b border-slate-800 hover:border-blue-400 py-1;
+}
 
 .portfolio-slider {
   .slick-slide {
     padding: 10px 20px;
-    /* Adjust the gap between images */
   }
 }
 
 .portfolio-item {
   height: 200px;
-  /* Set the height of image container */
 }
 
 .portfolio-item-inner {
   position: relative;
   height: 100%;
   width: 100%;
+}
+
+.smallHeading {
+  @apply text-xs uppercase tracking-[0.4em];
+}
+
+.heading {
+  @apply text-xl font-bold uppercase mt-4;
+}
+
+input,
+textarea {
+  @apply py-4 px-6 w-full mb-4 rounded;
+}
+
+button {
+  @apply transition duration-300 ease-in rounded cursor-pointer;
 }

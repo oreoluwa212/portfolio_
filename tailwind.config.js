@@ -7,9 +7,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        teal: "#008080",
+      },
       fontFamily: {
         burtons: "burtons",
         poppins: ["Poppins", "sans-serif"],
+        quicksand: ["quicksand", "sans-serif"],
+        playfair: ["playfair", "sans"],
       },
     },
   },
