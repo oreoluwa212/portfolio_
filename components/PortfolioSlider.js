@@ -79,7 +79,7 @@ const PortfolioSlider = () => {
       </div>
       <div className="portfolio-item">
         <a
-          href="https://msi-store-six.vercel.app/"
+          href="https://stream-vibe-ebon.vercel.app"
           target="_blank"
           rel="noopener noreferrer"
         >
