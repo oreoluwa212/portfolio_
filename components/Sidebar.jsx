@@ -41,7 +41,7 @@ const Sidebar = ({ show, setShow }) => {
           onClick={() => setShow(false)}
           className="absolute top-4 right-4 text-white text-2xl cursor-pointer flex md:hidden"
         />
-        
+
         <div className="flex justify-center">
           <Image
             src={profilePic}
@@ -82,6 +82,13 @@ const Sidebar = ({ show, setShow }) => {
             href="#work"
           >
             work
+          </Link>
+          <Link
+            className="sidebarLink"
+            onClick={() => setShow(false)}
+            href="#certificates"
+          >
+            certificates
           </Link>
           <Link
             className="sidebarLink"

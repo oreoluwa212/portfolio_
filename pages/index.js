@@ -17,6 +17,7 @@ import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import PortfolioSlider from "../components/PortfolioSlider";
 import Sidebar from "../components/Sidebar";
+import Certificates from "../components/Certificates";
 
 export default function Home() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -29,9 +30,8 @@ export default function Home() {
         {/* Sidebar */}
         <div className="col-span-1">
           <span
-            className={`${
-              isTouched ? "hidden" : "block md:hidden"
-            } fixed left-10 top-5 animate-ping bg-gray-400 h-[10px] w-[10px] rounded-full z-0`}
+            className={`${isTouched ? "hidden" : "block md:hidden"
+              } fixed left-10 top-5 animate-ping bg-gray-400 h-[10px] w-[10px] rounded-full z-0`}
           ></span>
           <RxHamburgerMenu
             className="fixed text-slate-300 md:hidden text-4xl left-4 top-4 cursor-pointer z-20"
@@ -41,9 +41,8 @@ export default function Home() {
             }}
           />
           <div
-            className={`h-screen w-screen bg-black opacity-40 blur-lg fixed z-10 ${
-              showSidebar ? "block" : "hidden"
-            }`}
+            className={`h-screen w-screen bg-black opacity-40 blur-lg fixed z-10 ${showSidebar ? "block" : "hidden"
+              }`}
             onClick={() => setShowSidebar(false)}
           ></div>
           <div className="md:hidden">
@@ -122,6 +121,7 @@ export default function Home() {
               <Skills />
               <Experience />
               <Projects />
+              <Certificates />
               <Contact />
             </div>
             <section className="px-4 py-8">
