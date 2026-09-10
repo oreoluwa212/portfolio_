@@ -39,26 +39,35 @@ a {
   text-decoration: none;
 }
 
-p, li, button {
-    @apply font-quicksand;
+p,
+li,
+button {
+  @apply font-quicksand;
 }
 
 p {
-    @apply leading-7 font-semibold;
+  @apply leading-7 font-semibold;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    @apply font-playfair tracking-[0.2em];
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-playfair tracking-[0.2em];
 }
 
 .sidebarLink {
-    @apply lg:my-3 my-2 cursor-pointer uppercase text-xs tracking-widest text-slate-400 hover:text-blue-400 border-b border-slate-800 hover:border-blue-400 py-1;
+  @apply lg:my-3 my-2 cursor-pointer uppercase text-xs tracking-widest text-slate-400 hover:text-blue-400 border-b border-slate-800 hover:border-blue-400 py-1;
 }
 
-.portfolio-slider {
-  .slick-slide {
-    padding: 10px 20px;
-  }
+.portfolio-slider .slick-slide {
+  padding: 0 8px;
+}
+
+.portfolio-slider .slick-list {
+  margin: 0 -8px;
 }
 
 .portfolio-item {

@@ -1,17 +1,17 @@
 import React from "react";
 import Slider from "react-slick";
 import Image from "next/image";
-import Link from "next/link";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
 import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
-import web6 from "../public/web6.PNG";
-import web8 from "../public/web8.png";
+import web6 from "../public/web6.png";
 import web7 from "../public/web7.png";
+import web8 from "../public/web8.png";
 
 const PortfolioSlider = () => {
   const settings = {
@@ -37,7 +37,7 @@ const PortfolioSlider = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          initialSlide: 1,
+          initialSlide: 0,
         },
       },
     ],
@@ -45,6 +45,7 @@ const PortfolioSlider = () => {
 
   return (
     <Slider {...settings} className="portfolio-slider">
+      {/* Life Plus */}
       <div className="portfolio-item">
         <a
           href="https://life-plus-webapp.vercel.app/"
@@ -54,13 +55,16 @@ const PortfolioSlider = () => {
           <div className="portfolio-item-inner">
             <Image
               className="rounded-lg object-cover"
-              layout="fill"
+              fill
               src={web8}
-              alt="image"
+              alt="Life Plus web application"
+              sizes="(max-width: 600px) 90vw, (max-width: 1024px) 45vw, 30vw"
             />
           </div>
         </a>
       </div>
+
+      {/* Store Clothing */}
       <div className="portfolio-item">
         <a
           href="https://store-clothing.vercel.app"
@@ -70,13 +74,16 @@ const PortfolioSlider = () => {
           <div className="portfolio-item-inner">
             <Image
               className="rounded-lg object-cover"
-              layout="fill"
+              fill
               src={web1}
-              alt="image"
+              alt="Store Clothing web application"
+              sizes="(max-width: 600px) 90vw, (max-width: 1024px) 45vw, 30vw"
             />
           </div>
         </a>
       </div>
+
+      {/* Stream Vibe */}
       <div className="portfolio-item">
         <a
           href="https://stream-vibe-ebon.vercel.app"
@@ -86,13 +93,16 @@ const PortfolioSlider = () => {
           <div className="portfolio-item-inner">
             <Image
               className="rounded-lg object-cover"
-              layout="fill"
+              fill
               src={web3}
-              alt="image"
+              alt="Stream Vibe web application"
+              sizes="(max-width: 600px) 90vw, (max-width: 1024px) 45vw, 30vw"
             />
           </div>
         </a>
       </div>
+
+      {/* BIS Payer */}
       <div className="portfolio-item">
         <a
           href="https://bis-payer.vercel.app/"
@@ -102,13 +112,16 @@ const PortfolioSlider = () => {
           <div className="portfolio-item-inner">
             <Image
               className="rounded-lg object-cover"
-              layout="fill"
+              fill
               src={web4}
-              alt="image"
+              alt="BIS Payer web application"
+              sizes="(max-width: 600px) 90vw, (max-width: 1024px) 45vw, 30vw"
             />
           </div>
         </a>
       </div>
+
+      {/* Group L Team Task */}
       <div className="portfolio-item">
         <a
           href="https://group-l-team-task.vercel.app/"
@@ -118,13 +131,16 @@ const PortfolioSlider = () => {
           <div className="portfolio-item-inner">
             <Image
               className="rounded-lg object-cover"
-              layout="fill"
+              fill
               src={web5}
-              alt="image"
+              alt="Group L team task web application"
+              sizes="(max-width: 600px) 90vw, (max-width: 1024px) 45vw, 30vw"
             />
           </div>
         </a>
       </div>
+
+      {/* SchoolBase */}
       <div className="portfolio-item">
         <a
           href="https://schoolbase-webapp.onrender.com/"
@@ -134,13 +150,16 @@ const PortfolioSlider = () => {
           <div className="portfolio-item-inner">
             <Image
               className="rounded-lg object-cover"
-              layout="fill"
+              fill
               src={web7}
-              alt="image"
+              alt="SchoolBase web application"
+              sizes="(max-width: 600px) 90vw, (max-width: 1024px) 45vw, 30vw"
             />
           </div>
         </a>
       </div>
+
+      {/* Match Lesson */}
       <div className="portfolio-item">
         <a
           href="https://match-lesson.vercel.app/"
@@ -150,13 +169,16 @@ const PortfolioSlider = () => {
           <div className="portfolio-item-inner">
             <Image
               className="rounded-lg object-cover"
-              layout="fill"
+              fill
               src={web6}
-              alt="image"
+              alt="Match Lesson web application"
+              sizes="(max-width: 600px) 90vw, (max-width: 1024px) 45vw, 30vw"
             />
           </div>
         </a>
       </div>
+
+      {/* Simbi Tech */}
       <div className="portfolio-item">
         <a
           href="https://simbi-tech-web-app.vercel.app/"
@@ -166,9 +188,10 @@ const PortfolioSlider = () => {
           <div className="portfolio-item-inner">
             <Image
               className="rounded-lg object-cover"
-              layout="fill"
+              fill
               src={web2}
-              alt="image"
+              alt="Simbi Tech web application"
+              sizes="(max-width: 600px) 90vw, (max-width: 1024px) 45vw, 30vw"
             />
           </div>
         </a>

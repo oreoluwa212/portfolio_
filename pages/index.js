@@ -26,44 +26,26 @@ export default function Home() {
   return (
     <div className={`relative ${darkMode ? "dark" : ""}`}>
       <div className="grid grid-cols-1 md:grid-cols-5 w-full min-h-screen">
-        {/* Sidebar */}
         <div className="col-span-1">
-          <span
-            className={`${
-              isTouched ? "hidden" : "block md:hidden"
-            } fixed left-10 top-5 animate-ping bg-gray-400 h-[10px] w-[10px] rounded-full z-0`}
-          ></span>
-          <RxHamburgerMenu
-            className="fixed text-slate-300 md:hidden text-4xl left-4 top-4 cursor-pointer z-20"
-            onClick={() => {
-              setShowSidebar(true);
-              setIsTouched(true);
-            }}
-          />
-          <div
-            className={`h-screen w-screen bg-black opacity-40 blur-lg fixed z-10 ${
-              showSidebar ? "block" : "hidden"
-            }`}
-            onClick={() => setShowSidebar(false)}
-          ></div>
           <div className="md:hidden">
-            {showSidebar && (
-              <Sidebar show={showSidebar} setShow={setShowSidebar} />
-            )}
+            {showSidebar && <Sidebar show={showSidebar} setShow={setShowSidebar} />}
           </div>
-          <div className="hidden md:block">
+          <div className="hidden md:block h-full">
             <Sidebar show={showSidebar} setShow={setShowSidebar} />
           </div>
         </div>
 
         <div className="col-span-4 overflow-hidden">
           <Head>
-            <title>Portfolio Website</title>
-            <meta name="description" content="Oreoluwa Ruth" />
+            <title>Oreoluwa Ruth Ajayi — Software Engineer</title>
+            <meta
+              name="description"
+              content="Oreoluwa Ruth Ajayi — Software Engineer (React, Node.js, TypeScript)"
+            />
             <link rel="icon" href="/airplay.svg" />
           </Head>
           <main className="bg-white dark:bg-gray-900 w-full px-[5%] text-black dark:text-white">
-            <section className="min-h-screen px-4">
+            <section className="min-h-screen px-4 flex flex-col">
               <nav className="py-10 mb-12 flex justify-between dark:text-white">
                 <h1 className="font-burtons text-xl">OREOLUWA RUTH AJAYI</h1>
                 <ul className="flex items-center gap-10">
@@ -73,32 +55,25 @@ export default function Home() {
                       className="cursor-pointer text-2xl"
                     />
                   </li>
-                  <li>
-                    <a
-                      href="https://docs.google.com/document/d/1MtiyDNLKHo-N4UNkuL-RZqN4Iv4rh49PBXijydEzUpg/edit"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-teal-600"
-                    >
-                      Resume
-                    </a>
-                  </li>
+                  <li><a href="https://drive.google.com/file/d/12D4hgid9UHBdiDJgASeJu8IZqEcSCCjS/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-teal-600">Resume</a></li>
                 </ul>
               </nav>
-              <div className="text-center pt-10 flex flex-col md:flex-row md:gap-20 items-center">
+
+              <div className="flex-1 flex flex-col md:flex-row justify-center items-center text-center md:gap-20">
                 <div>
                   <h2 className="text-3xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-4xl">
                     I am a
                   </h2>
                   <h3 className="font-extrabold lg:text-5xl md:text-4xl text-2xl tracking-[0.15em]">
-                    Product Designer, Mechanical Engineer & FullStack Developer.
+                    Software Engineer & Mechanical Engineer.
                   </h3>
                   <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-3xl mx-auto md:text-xl">
-                    I am a passionate and dedicated software developer with a
-                    deep love for crafting elegant and efficient solutions to
-                    complex problems. With 3 years of experience in the
-                    industry, I help brands prioritize user experience through
-                    the combination of design, technology and programming.
+                    I'm a full-stack developer with 4 years of experience building
+                    production React, Node.js, and TypeScript applications. I've led a
+                    4-person engineering team, shipped financial dashboards that cut load
+                    times by 40%, and been ranked in the top 1% of JavaScript engineers
+                    globally on Algora. My mechanical engineering background shapes how I
+                    approach systems: rigorously, and built to last.
                   </p>
 
                   <div className="flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
@@ -118,12 +93,14 @@ export default function Home() {
                 </div>
               </div>
             </section>
+
             <div className="px-6 md:px-0">
               <Skills />
               <Experience />
               <Projects />
               <Contact />
             </div>
+
             <section className="px-4 py-8">
               <h3 className="text-4xl py-1 dark:text-white">Portfolio</h3>
               <PortfolioSlider />

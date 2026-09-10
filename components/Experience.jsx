@@ -29,7 +29,6 @@ const ExperienceItem = ({ date, title, role, description, tasks, isDarkMode }) =
   );
 };
 
-
 const Experience = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -49,14 +48,56 @@ const Experience = () => {
       <ol className="relative border-l border-slate-400 ml-4 mt-8">
         <Hoc>
           <ExperienceItem
-            date="September 2023 - Present"
-            title="Student Fellow @ Tech4Dev"
-            role="Mentor"
-            description="As a Student Fellow in the Women Techsters fellowship, I mentor fellow fellows and contribute to their development through guidance and support in project management, technical skills, and career planning. I assist teams in overcoming obstacles and achieving project goals."
+            date="May 2025 - December 2025"
+            title="Software Engineer @ Qurexa"
+            role="Full-Stack Developer"
+            description="Full-stack role delivering a pharmacy application from architecture through to shipped product."
             tasks={[
-              "Guided teams in creating scalable web applications using React.js and Next.js.",
-              "Provided technical support and feedback on code quality and project architecture.",
-              "Facilitated workshops on best practices in React.js development and state management."
+              "Formed and led a 4-person team to design and ship a pharmacy application end to end.",
+              "Built full-stack features using React, Node.js, TypeScript, and MongoDB.",
+              "Made architecture and technical direction decisions across the frontend and backend."
+            ]}
+            isDarkMode={isDarkMode}
+          />
+        </Hoc>
+        <Hoc>
+          <ExperienceItem
+            date="August 2025 - November 2025"
+            title="PR Reviewer (Contract) @ magic.dev"
+            role="Code Reviewer"
+            description="Contract role auditing AI-generated code for a fast-moving dev tooling team."
+            tasks={[
+              "Reviewed AI-generated pull requests for correctness, readability, and edge-case handling.",
+              "Flagged systematic errors and recurring failure patterns for the team.",
+              "Evaluated code against best-practice standards across varied codebases."
+            ]}
+            isDarkMode={isDarkMode}
+          />
+        </Hoc>
+        <Hoc>
+          <ExperienceItem
+            date="May 2024 - February 2025"
+            title="Frontend Web Developer @ Coast Engineering Firm"
+            role="Frontend Developer"
+            description="Frontend role focused on data-heavy financial tooling for internal teams."
+            tasks={[
+              "Built responsive financial-data dashboards using React, TypeScript, and REST APIs.",
+              "Implemented data visualization components for complex financial datasets.",
+              "Contributed to a ~40% improvement in application load times."
+            ]}
+            isDarkMode={isDarkMode}
+          />
+        </Hoc>
+        <Hoc>
+          <ExperienceItem
+            date="September 2023 - October 2024"
+            title="Student Fellow @ Women Techsters Fellowship"
+            role="Mentor"
+            description="Fellowship role supporting fellow developers through hands-on mentorship."
+            tasks={[
+              "Guided teams in building scalable web applications using React.js and Next.js.",
+              "Provided technical feedback on code quality and project architecture.",
+              "Facilitated workshops on React.js development and state management best practices."
             ]}
             isDarkMode={isDarkMode}
           />
@@ -65,68 +106,12 @@ const Experience = () => {
           <ExperienceItem
             date="October 2023"
             title="Tech Girls Advocacy Drive State Head"
-            role="Leader"
-            description="Led outreach programs to empower over 1000 girls through STEM advocacy, facilitated training sessions, and allocated tasks to maximize team efficiency. Fostered innovation and inclusivity within the Women Techsters Advocacy Team."
+            role="STEM Advocacy Lead, Oyo State"
+            description="State-level leadership role expanding STEM access across Oyo State."
             tasks={[
-              "Organized and led events to promote tech careers among young women.",
-              "Coordinated with local schools to implement STEM workshops and coding bootcamps.",
-              "Utilized React.js and Next.js to develop interactive web components for outreach materials."
-            ]}
-            isDarkMode={isDarkMode}
-          />
-        </Hoc>
-        <Hoc>
-          <ExperienceItem
-            date="March 2023 - September 2023"
-            title="Software Engineer Intern @ alx_africa"
-            role="Intern"
-            description="Gained hands-on experience with JavaScript and peer mentoring. Applied UX design principles and contributed to team projects with a focus on front-end coding and effective communication."
-            tasks={[
-              "Built and maintained features for web applications using React.js.",
-              "Participated in code reviews and contributed to improving codebase quality.",
-              "Worked on integrating APIs and developing dynamic user interfaces with Next.js."
-            ]}
-            isDarkMode={isDarkMode}
-          />
-        </Hoc>
-        <Hoc>
-          <ExperienceItem
-            date="May 2023 - August 2023"
-            title="Frontend Mentee @ Wetech"
-            role="Mentee"
-            description="Focused on creating intuitive user interfaces and was recognized as the Best Project Pitch Winner. Developed front-end skills with a strong emphasis on UX design and coding."
-            tasks={[
-              "Developed responsive UI components using React.js and Tailwind CSS.",
-              "Applied UX principles to enhance user experience and interface design.",
-              "Presented and pitched project ideas, demonstrating effective communication skills."
-            ]}
-            isDarkMode={isDarkMode}
-          />
-        </Hoc>
-        <Hoc>
-          <ExperienceItem
-            date="May 2023 - June 2023"
-            title="Student Software Developer @ Tech4Dev"
-            role="Developer"
-            description="Participated in a transformative bootcamp that enhanced my software development skills through hands-on sessions and practical knowledge in HTML and Vue.js."
-            tasks={[
-              "Built and deployed projects using Vue.js, focusing on creating interactive and dynamic web applications.",
-              "Collaborated with peers to develop software solutions and refine coding practices.",
-              "Enhanced problem-solving skills through intensive coding exercises and real-world projects."
-            ]}
-            isDarkMode={isDarkMode}
-          />
-        </Hoc>
-        <Hoc>
-          <ExperienceItem
-            date="March 2023 - June 2023"
-            title="React Developer Intern @ HerTechTrail"
-            role="Intern"
-            description="Contributed to an event ticketing project, applying React.js and Tailwind CSS. Worked in a collaborative environment to develop and enhance application features."
-            tasks={[
-              "Developed and maintained features for a ticketing system using React.js.",
-              "Collaborated with the team to ensure efficient and scalable front-end development.",
-              "Utilized Tailwind CSS for styling and implementing responsive design principles."
+              "Led a team of volunteers to organize STEM workshops reaching 1,000+ girls in Oyo State.",
+              "Facilitated training sessions on communication and leadership.",
+              "Coordinated outreach events promoting tech careers among young women."
             ]}
             isDarkMode={isDarkMode}
           />

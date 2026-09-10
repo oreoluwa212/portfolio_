@@ -3,38 +3,26 @@ import { motion } from "framer-motion";
 const container = {
   hidden: {
     opacity: 0,
+    y: 24,
   },
   visible: {
     opacity: 1,
+    y: 0,
     transition: {
       ease: "easeOut",
-      duration: 0.8,
+      duration: 0.6,
     },
   },
 };
 
 const Hoc = ({ children }) => {
-  // const [ isIntersecting, setIsIntersecting ] = useState(false);
-
-  // useEffect(() => {
-
-  //     const observer = new IntersectionObserver(([entry]) => {
-  //         setIsIntersecting(entry.isIntersecting);
-  //     });
-
-  //     observer.observe(ref.current);
-
-  //     // if (isIntersecting) {
-  //     // 	observer.disconnect();
-  //     // }
-
-  //     return () => observer.disconnect();
-  // }, [isIntersecting]);
-
-  // const ref = useRef(null);
-
   return (
-    <motion.div variants={container} initial="hidden" whileInView="visible">
+    <motion.div
+      variants={container}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+    >
       {children}
     </motion.div>
   );

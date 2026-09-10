@@ -3,7 +3,17 @@ import { motion } from "framer-motion";
 
 import { FaCss3, FaFigma, FaHtml5, FaReact, FaTools } from "react-icons/fa";
 import { DiJavascript1 } from "react-icons/di";
-import { SiFirebase, SiNextdotjs, SiExpress, SiMongodb, SiSvelte, SiTypescript } from "react-icons/si";
+import {
+  SiFirebase,
+  SiNextdotjs,
+  SiExpress,
+  SiMongodb,
+  SiSvelte,
+  SiTypescript,
+  SiPython,
+  SiDocker,
+  SiFlutter,
+} from "react-icons/si";
 import { BsGit } from "react-icons/bs";
 import { BiLogoSass, BiLogoTailwindCss } from "react-icons/bi";
 import { AiFillGithub } from "react-icons/ai";
@@ -47,6 +57,9 @@ const Skills = () => {
     { icon: <SiExpress className="text-5xl" />, label: "Express.js" },
     { icon: <SiMongodb className="text-5xl" />, label: "MongoDB" },
     { icon: <SiSvelte className="text-5xl" />, label: "Sveltejs" },
+    { icon: <SiPython className="text-5xl" />, label: "Python" },
+    { icon: <SiDocker className="text-5xl" />, label: "Docker" },
+    { icon: <SiFlutter className="text-5xl" />, label: "Flutter" },
     { icon: <BsGit className="text-5xl" />, label: "Git" },
     { icon: <AiFillGithub className="text-5xl" />, label: "Github" },
   ];
@@ -69,7 +82,7 @@ const Skills = () => {
 
       <Hoc>
         <p className="">
-          Over the past three years, I&apos;ve had the opportunity to learn and master a variety of tools and programming languages.
+          Over the past four years, I&apos;ve had the opportunity to learn and master a variety of tools and programming languages.
           <FaTools className="inline" />. You may find me building with these:
         </p>
       </Hoc>

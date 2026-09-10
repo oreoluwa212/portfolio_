@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import { FiArrowUpRight } from "react-icons/fi";
 import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
 import web9 from "../public/web9.png";
 import web4 from "../public/web4.png";
 import web3 from "../public/web3.png";
-import web6 from "../public/web6.PNG";
+import web6 from "../public/web6.png";
 import web7 from "../public/web7.png";
 import web8 from "../public/web8.png";
 import Hoc from "./Hoc";
@@ -25,13 +26,13 @@ const projects = [
     description:
       "A modern movie recommendation platform built with React and TMDB API.Features movie discovery, detailed information, trailers, and personalized recommendations with a sleek Netflix- inspired interface.",
   },
-  {
-    image: web9,
-    link: "https://delve.fun",
-    title: "Delve - Language Learning App",
-    description:
-      "Created a language learning application optimized for a seamless learning experience in form of a game with microphone and 3D features using Assembly AI, threejs, etc.",
-  },
+  // {
+  //   image: web9,
+  //   link: "https://delve.fun",
+  //   title: "Delve - Language Learning App",
+  //   description:
+  //     "Created a language learning application optimized for a seamless learning experience in form of a game with microphone and 3D features using Assembly AI, threejs, etc.",
+  // },
   {
     image: web8,
     link: "https://life-plus-webapp.vercel.app",
@@ -88,26 +89,41 @@ const Projects = () => {
 
       <div className="grid xl:grid-cols-2 grid-cols-1 gap-8 mt-8">
         {projects.map((project, index) => (
-          <Hoc key={index}>
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="shadow-md shadow-slate-800 h-full flex flex-col"
-            >
-              <Image
-                className="object-cover w-full h-64"
-                src={project.image}
-                alt={project.title}
-              />
-              <div className="p-4 flex flex-col justify-between grow">
-                <div>
-                  <h4 className="font-bold tracking-wide">{project.title}</h4>
-                  <p>{project.description}</p>
-                </div>
+          <Hoc key={index}><a href={project.link} target="_blank" rel="noopener noreferrer" className="group relative block h-72 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-teal-600 focus-visible:outline-offset-2">
+            <Image
+              fill
+              className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+              src={project.image}
+              alt={project.title}
+            />
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  "linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.75) 55%, rgba(0,0,0,0.15) 100%)",
+              }}
+            />
+            <div className="absolute inset-x-0 bottom-0 p-5 flex items-end justify-between gap-3">
+              <div>
+                <h4
+                  className="font-bold tracking-wide text-white"
+                  style={{ textShadow: "0 1px 3px rgba(0,0,0,0.8)" }}
+                >
+                  {project.title}
+                </h4>
+                <p
+                  className="text-md text-neutral-100 mt-1.5 max-w-md leading-relaxed opacity-0 max-h-0 overflow-hidden transition-all duration-300 ease-out group-hover:opacity-100 group-hover:max-h-40 group-hover:mt-2"
+                  style={{ textShadow: "0 1px 2px rgba(0,0,0,0.8)" }}
+                >
+                  {project.description}
+                </p>
               </div>
-            </a>
-          </Hoc>
+              <FiArrowUpRight
+                className="flex-shrink-0 text-white text-xl mb-1 opacity-0 -translate-x-1 translate-y-1 transition-all duration-300 ease-out group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0"
+                style={{ filter: "drop-shadow(0 1px 2px rgba(0,0,0,0.8))" }}
+              />
+            </div>
+          </a></Hoc>
         ))}
       </div>
     </section>
